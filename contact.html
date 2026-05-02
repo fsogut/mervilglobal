@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – MERVIL Global</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="logo.jpg" alt="MERVIL Global" />
+      </a>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="label">Get in Touch</span>
+      <h1>Let's start<br>a conversation.</h1>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section section">
+    <div class="container contact-section__inner">
+
+      <!-- CONTACT INFO -->
+      <div class="contact-info">
+        <h2>We'd love to hear<br>from you.</h2>
+        <p>Whether you have a specific inquiry, want to discuss a potential partnership, or simply want to learn more about what MERVIL Global does — reach out. We respond to every serious inquiry personally.</p>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="contact-item__label">Email</span>
+            <a href="mailto:furkan@mervilglobal.com" class="contact-item__val">furkan@mervilglobal.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item__label">Website</span>
+            <a href="https://www.mervilglobal.com" class="contact-item__val">www.mervilglobal.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item__label">Sectors</span>
+            <span class="contact-item__val">Container Trading · Multimodal Logistics · Commodities</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item__label">Operating Region</span>
+            <span class="contact-item__val">Turkey · Caucasus · Central Asia</span>
+          </div>
+        </div>
+
+        <div class="contact-note">
+          <p>MERVIL Global works with a select group of business partners. All inquiries are treated with discretion and professionalism.</p>
+        </div>
+      </div>
+
+      <!-- CONTACT FORM -->
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Your company" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Area of Interest</label>
+            <select id="subject" name="subject">
+              <option value="" disabled selected>Select a service area</option>
+              <option value="containers">Container Trading &amp; Leasing</option>
+              <option value="logistics">Railway &amp; Multimodal Logistics</option>
+              <option value="commodities">Commodity Trading</option>
+              <option value="other">General Inquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your requirement..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          <div class="form-success" id="formSuccess">
+            ✓ Thank you. Your message has been sent. We'll be in touch shortly.
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="index.html" class="footer__logo"><img src="logo.jpg" alt="MERVIL Global" /></a>
+      <div class="footer__tagline">Container · Multimodal Logistics · Commodities</div>
+      <nav class="footer__nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer__copy">© 2025 MERVIL Global. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
