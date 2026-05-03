@@ -286,6 +286,23 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
   line-height: 1.5;
 }
 
+/* ── MOTHER'S DAY ── */
+.mothers-day {
+  background: #fff;
+  padding: 48px 0;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+.mothers-day__msg {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  color: var(--charcoal);
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  line-height: 1.6;
+}
+
 /* ── PILLARS ── */
 .pillars { background: var(--off-white); }
 .pillars__grid {
