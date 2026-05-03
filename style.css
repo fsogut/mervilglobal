@@ -6,8 +6,8 @@
 
 :root {
   --charcoal: #2B2B2B;
-  --blue: #2156A0;
-  --blue-light: #3a72c8;
+  --blue: #3A6EA5;
+  --blue-light: #5a90c8;
   --off-white: #F7F5F2;
   --mid-grey: #888;
   --border: #e0ddd9;
@@ -51,7 +51,7 @@ h1 { font-size: clamp(2.6rem, 5vw, 4.2rem); }
 h2 { font-size: clamp(2rem, 3.5vw, 3rem); }
 h3 { font-size: 1.5rem; }
 h4 { font-size: 1.2rem; }
-em { font-style: italic; color: var(--blue); }
+em { font-style: normal; color: #3A6EA5; }
 
 p { font-size: 1rem; color: #444; line-height: 1.8; }
 
@@ -106,22 +106,23 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
   cursor: pointer;
 }
 .btn--primary {
-  background: var(--charcoal);
+  background: #3A6EA5;
   color: #fff;
-  border-color: var(--charcoal);
+  border-color: #3A6EA5;
 }
 .btn--primary:hover {
-  background: var(--blue);
-  border-color: var(--blue);
+  background: #2F5E9E;
+  border-color: #2F5E9E;
 }
 .btn--ghost {
   background: transparent;
-  color: #fff;
-  border-color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.75);
+  border-color: rgba(255,255,255,0.3);
 }
 .btn--ghost:hover {
-  border-color: #fff;
-  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.7);
+  color: #fff;
+  background: rgba(255,255,255,0.06);
 }
 .btn--white {
   background: #fff;
@@ -241,11 +242,12 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
 }
 .hero__sub {
   font-size: 1rem;
-  color: rgba(255,255,255,0.55);
+  color: rgba(255,255,255,0.75);
+  font-weight: 500;
   max-width: 560px;
   line-height: 1.8;
   margin-bottom: 48px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
 }
 .hero__cta { display: flex; gap: 16px; flex-wrap: wrap; }
 
