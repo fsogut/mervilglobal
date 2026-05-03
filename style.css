@@ -311,7 +311,7 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
 .pillar:hover::after { width: 100%; }
 .pillar:hover { box-shadow: 0 8px 40px rgba(0,0,0,0.08); z-index: 1; }
 .pillar__icon {
-  width: 56px; height: 56px;
+  width: 52px; height: 52px;
   color: var(--blue);
   margin-bottom: 24px;
 }
