@@ -272,6 +272,20 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
   margin: 0 auto 8px;
 }
 
+.pillars__header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.pillars__headline {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  color: #555;
+  font-weight: 400;
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
 /* ── PILLARS ── */
 .pillars { background: var(--off-white); }
 .pillars__grid {
@@ -297,7 +311,7 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
 .pillar:hover::after { width: 100%; }
 .pillar:hover { box-shadow: 0 8px 40px rgba(0,0,0,0.08); z-index: 1; }
 .pillar__icon {
-  width: 48px; height: 48px;
+  width: 56px; height: 56px;
   color: var(--blue);
   margin-bottom: 24px;
 }
