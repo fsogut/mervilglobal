@@ -165,7 +165,6 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
   height: 44px;
   width: auto;
   object-fit: contain;
-  mix-blend-mode: screen;
 }
 .nav__links {
   list-style: none;
@@ -397,10 +396,9 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
   text-align: center;
 }
 .footer__logo img {
-  height: 36px;
+  height: 40px;
   width: auto;
   object-fit: contain;
-  mix-blend-mode: screen;
   opacity: 0.9;
 }
 .footer__tagline {
