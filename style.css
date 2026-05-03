@@ -207,14 +207,14 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
   position: relative;
   overflow: hidden;
   padding-top: var(--nav-h);
-  background: var(--charcoal);
+  background: #383838;
 }
 .hero__bg {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 60% 70% at 80% 50%, rgba(33,86,160,0.18) 0%, transparent 70%),
-    linear-gradient(145deg, #1e1e1e 0%, #2B2B2B 50%, #333 100%);
+    radial-gradient(ellipse 60% 70% at 80% 50%, rgba(33,86,160,0.22) 0%, transparent 70%),
+    linear-gradient(145deg, #2a2a2a 0%, #363636 50%, #3d3d3d 100%);
 }
 .hero__content {
   position: relative;
@@ -240,11 +240,12 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
   margin-bottom: 28px;
 }
 .hero__sub {
-  font-size: 1.05rem;
-  color: rgba(255,255,255,0.6);
+  font-size: 1rem;
+  color: rgba(255,255,255,0.55);
   max-width: 560px;
   line-height: 1.8;
   margin-bottom: 48px;
+  letter-spacing: 0.04em;
 }
 .hero__cta { display: flex; gap: 16px; flex-wrap: wrap; }
 
