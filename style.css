@@ -476,6 +476,61 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
   color: rgba(255,255,255,0.25);
 }
 
+/* ── WHY US ── */
+.why-intro { background: #fff; }
+.why-intro__inner { max-width: 760px; }
+.why-intro__text {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  color: #444;
+  font-weight: 400;
+  line-height: 1.7;
+}
+.why-blocks { background: var(--off-white); padding: 0; }
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+}
+.why-card {
+  background: #fff;
+  padding: 48px 40px;
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  transition: box-shadow var(--transition);
+  position: relative;
+}
+.why-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 0; height: 3px;
+  background: var(--blue);
+  transition: width 0.3s ease;
+}
+.why-card:hover::after { width: 100%; }
+.why-card:hover { box-shadow: 0 8px 40px rgba(0,0,0,0.07); z-index: 1; }
+.why-card__num {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: var(--border);
+  line-height: 1;
+  min-width: 48px;
+  padding-top: 4px;
+}
+.why-card__body h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  line-height: 1.25;
+}
+.why-card__body p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.75;
+}
+
 .geo-global {
   margin-top: 32px;
   padding: 20px 28px;
@@ -698,6 +753,8 @@ a.contact-item__val:hover { color: var(--blue); }
   .story__inner { grid-template-columns: 1fr; gap: 48px; }
   .story__values { grid-template-columns: 1fr; }
   .geo-grid { grid-template-columns: 1fr; }
+  .why-grid { grid-template-columns: 1fr; }
+  .why-card { padding: 36px 28px; }
   .contact-section__inner { grid-template-columns: 1fr; gap: 48px; }
   .service-block__inner { grid-template-columns: 1fr; gap: 24px; }
   .service-block__label { flex-direction: row; }
