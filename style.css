@@ -476,6 +476,17 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
   color: rgba(255,255,255,0.25);
 }
 
+.geo-global {
+  margin-top: 32px;
+  padding: 20px 28px;
+  background: var(--charcoal);
+  color: rgba(255,255,255,0.75);
+  font-size: 0.92rem;
+  font-style: italic;
+  border-left: 3px solid var(--blue);
+  line-height: 1.7;
+}
+
 /* ── PAGE HERO (inner pages) ── */
 .page-hero {
   padding: calc(var(--nav-h) + 80px) 0 80px;
