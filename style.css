@@ -162,9 +162,10 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
   justify-content: space-between;
 }
 .nav__logo img {
-  height: 36px;
+  height: 44px;
   width: auto;
   object-fit: contain;
+  mix-blend-mode: screen;
 }
 .nav__links {
   list-style: none;
@@ -399,7 +400,7 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
   height: 36px;
   width: auto;
   object-fit: contain;
-  filter: brightness(0) invert(1);
+  mix-blend-mode: screen;
   opacity: 0.9;
 }
 .footer__tagline {
