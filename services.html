@@ -12,50 +12,47 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
-
   <nav class="nav" id="nav">
     <div class="nav__inner">
-      <a href="index.html" class="nav__logo">
-        <img src="logo.png" alt="MERVIL Global" />
-      </a>
-      <button class="nav__burger" id="burger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="index.html" class="nav__logo"><img src="logo.png" alt="MERVIL Global" /></a>
+      <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
       <ul class="nav__links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav_about">About</a></li>
+        <li><a href="services.html" class="active" data-i18n="nav_services">Services</a></li>
+        <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
       </ul>
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="tr">TR</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="ru">RU</button>
+      </div>
     </div>
   </nav>
 
-  <!-- PAGE HERO -->
   <section class="page-hero">
     <div class="container">
-      <span class="label">What We Do</span>
-      <h1>Three sectors.<br>One trusted partner.</h1>
+      <span class="label" data-i18n="svc_hero_label">What We Do</span>
+      <h1 data-i18n="svc_hero_title">Three sectors.<br>One trusted partner.</h1>
     </div>
   </section>
 
-  <!-- SERVICE 1 -->
   <section class="service-block section" id="logistics">
     <div class="container service-block__inner">
-      <div class="service-block__label">
-        <span class="svc-num">01</span>
-        <div class="svc-divider"></div>
-      </div>
+      <div class="service-block__label"><span class="svc-num">01</span><div class="svc-divider"></div></div>
       <div class="service-block__content">
-        <span class="label">Railway &amp; Multimodal Logistics</span>
-        <h2>End-to-end freight across critical corridors.</h2>
-        <p>We specialize in railway and multimodal freight logistics along some of the most strategically significant trade corridors in Eurasia — including the Trans-Caspian International Transport Route (TITR / Middle Corridor) and routes through Turkey, the Caucasus, and Central Asia.</p>
-        <p>With deep knowledge of regional operators, border procedures, and intermodal connections, MERVIL Global designs reliable solutions that combine rail, road, and maritime legs for optimal transit times and cost efficiency.</p>
+        <span class="label" data-i18n="svc1_label">Railway &amp; Multimodal Logistics</span>
+        <h2 data-i18n="svc1_title">End-to-end freight across critical corridors.</h2>
+        <p data-i18n="svc1_p1">We specialize in railway and multimodal freight logistics along some of the most strategically significant trade corridors in Eurasia — including the Trans-Caspian International Transport Route (TITR / Middle Corridor) and routes through Turkey, the Caucasus, and Central Asia.</p>
+        <p data-i18n="svc1_p2">With deep knowledge of regional operators, border procedures, and intermodal connections, MERVIL Global designs reliable solutions that combine rail, road, and maritime legs for optimal transit times and cost efficiency.</p>
         <ul class="svc-list">
-          <li>Railway freight forwarding (block trains &amp; single wagons)</li>
-          <li>Multimodal door-to-door solutions</li>
-          <li>Trans-Caspian / Middle Corridor routing</li>
-          <li>Customs &amp; border clearance coordination</li>
-          <li>Cargo tracking and operational support</li>
+          <li data-i18n="svc1_li1">Railway freight forwarding (block trains &amp; single wagons)</li>
+          <li data-i18n="svc1_li2">Multimodal door-to-door solutions</li>
+          <li data-i18n="svc1_li3">Trans-Caspian / Middle Corridor routing</li>
+          <li data-i18n="svc1_li4">Customs &amp; border clearance coordination</li>
+          <li data-i18n="svc1_li5">Cargo tracking and operational support</li>
         </ul>
       </div>
     </div>
@@ -63,23 +60,19 @@
 
   <div class="section-divider"></div>
 
-  <!-- SERVICE 2 -->
   <section class="service-block section" id="containers">
     <div class="container service-block__inner service-block__inner--alt">
-      <div class="service-block__label">
-        <span class="svc-num">02</span>
-        <div class="svc-divider"></div>
-      </div>
+      <div class="service-block__label"><span class="svc-num">02</span><div class="svc-divider"></div></div>
       <div class="service-block__content">
-        <span class="label">Container Solutions</span>
-        <h2>Moving and managing containers with precision.</h2>
-        <p>MERVIL Global operates in the buying, selling, and leasing of ISO shipping containers — new and used — across key trade lanes connecting Europe, Turkey, the Caucasus, and Central Asia.</p>
-        <p>Our approach is grounded in quality assessment, market knowledge, and a commitment to matching the right asset to the right client need. Whether you're looking to acquire a fleet, lease individual units, or offload surplus containers, we provide straightforward, reliable solutions.</p>
+        <span class="label" data-i18n="svc2_label">Container Solutions</span>
+        <h2 data-i18n="svc2_title">Moving and managing containers with precision.</h2>
+        <p data-i18n="svc2_p1">MERVIL Global operates in the buying, selling, and leasing of ISO shipping containers — new and used — across key trade lanes connecting Europe, Turkey, the Caucasus, and Central Asia.</p>
+        <p data-i18n="svc2_p2">Our approach is grounded in quality assessment, market knowledge, and a commitment to matching the right asset to the right client need. Whether you're looking to acquire a fleet, lease individual units, or offload surplus containers, we provide straightforward, reliable solutions.</p>
         <ul class="svc-list">
-          <li>New &amp; used ISO container sales</li>
-          <li>Short and long-term container leasing</li>
-          <li>Container fleet advisory</li>
-          <li>Depot and positioning coordination</li>
+          <li data-i18n="svc2_li1">New &amp; used ISO container sales</li>
+          <li data-i18n="svc2_li2">Short and long-term container leasing</li>
+          <li data-i18n="svc2_li3">Container fleet advisory</li>
+          <li data-i18n="svc2_li4">Depot and positioning coordination</li>
         </ul>
       </div>
     </div>
@@ -87,60 +80,54 @@
 
   <div class="section-divider"></div>
 
-  <!-- SERVICE 3 -->
   <section class="service-block section" id="commodities">
     <div class="container service-block__inner">
-      <div class="service-block__label">
-        <span class="svc-num">03</span>
-        <div class="svc-divider"></div>
-      </div>
+      <div class="service-block__label"><span class="svc-num">03</span><div class="svc-divider"></div></div>
       <div class="service-block__content">
-        <span class="label">Commodity Trading</span>
-        <h2>Transparent sourcing of fertilizers and industrial chemicals.</h2>
-        <p>MERVIL Global actively trades in fertilizer raw materials and chemicals — including key inputs for agricultural and industrial production — connecting suppliers and buyers across the region with transparency and integrity.</p>
-        <p>We understand the sensitivity and complexity of commodity markets and bring a disciplined, relationship-based approach that prioritizes supply chain reliability and fair dealing above all.</p>
+        <span class="label" data-i18n="svc3_label">Commodity Trading</span>
+        <h2 data-i18n="svc3_title">Transparent sourcing of fertilizers and industrial chemicals.</h2>
+        <p data-i18n="svc3_p1">MERVIL Global actively trades in fertilizer raw materials and chemicals — including key inputs for agricultural and industrial production — connecting suppliers and buyers across the region with transparency and integrity.</p>
+        <p data-i18n="svc3_p2">We understand the sensitivity and complexity of commodity markets and bring a disciplined, relationship-based approach that prioritizes supply chain reliability and fair dealing above all.</p>
         <ul class="svc-list">
-          <li>Fertilizer raw materials (potash, urea, phosphates)</li>
-          <li>Industrial chemicals sourcing</li>
-          <li>Supplier &amp; buyer matching</li>
-          <li>Contract structuring and documentation</li>
-          <li>Logistics coordination for bulk cargoes</li>
+          <li data-i18n="svc3_li1">Fertilizer raw materials (potash, urea, phosphates)</li>
+          <li data-i18n="svc3_li2">Industrial chemicals sourcing</li>
+          <li data-i18n="svc3_li3">Supplier &amp; buyer matching</li>
+          <li data-i18n="svc3_li4">Contract structuring and documentation</li>
+          <li data-i18n="svc3_li5">Logistics coordination for bulk cargoes</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- CTA BANNER -->
   <section class="cta-banner">
     <div class="container">
-      <h2>Looking for a reliable partner in trade and logistics?</h2>
-      <p>We provide tailored logistics and trading solutions built around your specific operational needs.</p>
-      <a href="contact.html" class="btn btn--white">Request a Quote</a>
+      <h2 data-i18n="cta_title">Looking for a reliable partner in trade and logistics?</h2>
+      <p data-i18n="cta_desc">We provide tailored logistics and trading solutions built around your specific operational needs.</p>
+      <a href="contact.html" class="btn btn--white" data-i18n="cta_btn">Request a Quote</a>
     </div>
   </section>
 
   <footer class="footer">
     <div class="container footer__inner">
       <a href="index.html" class="footer__logo"><img src="logo.png" alt="MERVIL Global" /></a>
-
       <div class="footer__cols">
         <div class="footer__col">
-          <span class="footer__col-title">Services</span>
-          <a href="services.html#logistics">Multimodal Logistics</a>
-          <a href="services.html#containers">Container Solutions</a>
-          <a href="services.html#commodities">Commodity Trading</a>
+          <span class="footer__col-title" data-i18n="footer_svc_title">Services</span>
+          <a href="services.html#logistics" data-i18n="footer_s1">Multimodal Logistics</a>
+          <a href="services.html#containers" data-i18n="footer_s2">Container Solutions</a>
+          <a href="services.html#commodities" data-i18n="footer_s3">Commodity Trading</a>
         </div>
         <div class="footer__col">
-          <span class="footer__col-title">Company</span>
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+          <span class="footer__col-title" data-i18n="footer_co_title">Company</span>
+          <a href="about.html" data-i18n="footer_about">About</a>
+          <a href="services.html" data-i18n="footer_services">Services</a>
+          <a href="contact.html" data-i18n="footer_contact">Contact</a>
         </div>
       </div>
-      <div class="footer__copy">© 2025 MERVIL Global. All rights reserved.</div>
+      <div class="footer__copy" data-i18n="footer_copy">© 2025 MERVIL Global. All rights reserved.</div>
     </div>
   </footer>
-
+  <script src="i18n.js"></script>
   <script src="main.js"></script>
 </body>
 </html>

@@ -12,126 +12,119 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
-
   <nav class="nav" id="nav">
     <div class="nav__inner">
-      <a href="index.html" class="nav__logo">
-        <img src="logo.png" alt="MERVIL Global" />
-      </a>
-      <button class="nav__burger" id="burger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="index.html" class="nav__logo"><img src="logo.png" alt="MERVIL Global" /></a>
+      <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
       <ul class="nav__links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav_about">About</a></li>
+        <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+        <li><a href="contact.html" class="active" data-i18n="nav_contact">Contact</a></li>
       </ul>
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="tr">TR</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="ru">RU</button>
+      </div>
     </div>
   </nav>
 
-  <!-- PAGE HERO -->
   <section class="page-hero">
     <div class="container">
-      <span class="label">Get in Touch</span>
-      <h1>Let's start<br>a conversation.</h1>
+      <span class="label" data-i18n="contact_hero_label">Get in Touch</span>
+      <h1 data-i18n="contact_hero_title">Let's start<br>a conversation.</h1>
     </div>
   </section>
 
-  <!-- CONTACT SECTION -->
   <section class="contact-section section">
     <div class="container contact-section__inner">
-
-      <!-- CONTACT INFO -->
       <div class="contact-info">
-        <h2>We'd love to hear<br>from you.</h2>
-        <p>Whether you have a specific inquiry, want to discuss a potential partnership, or simply want to learn more about what MERVIL Global does — reach out. We respond to every serious inquiry personally.</p>
-
+        <h2 data-i18n="contact_info_title">We'd love to hear<br>from you.</h2>
+        <p data-i18n="contact_info_desc">Whether you have a specific inquiry, want to discuss a potential partnership, or simply want to learn more about what MERVIL Global does — reach out. We respond to every serious inquiry personally.</p>
         <div class="contact-details">
           <div class="contact-item">
-            <span class="contact-item__label">Email</span>
-            <a href="mailto:furkan@mervilglobal.com" class="contact-item__val">furkan@mervilglobal.com</a>
+            <span class="contact-item__label" data-i18n="contact_email_label">Email</span>
+            <a href="mailto:info@mervilglobal.com" class="contact-item__val">info@mervilglobal.com</a>
           </div>
           <div class="contact-item">
-            <span class="contact-item__label">Website</span>
+            <span class="contact-item__label" data-i18n="contact_web_label">Website</span>
             <a href="https://www.mervilglobal.com" class="contact-item__val">www.mervilglobal.com</a>
           </div>
           <div class="contact-item">
-            <span class="contact-item__label">Sectors</span>
-            <span class="contact-item__val">Container Trading · Multimodal Logistics · Commodities</span>
+            <span class="contact-item__label" data-i18n="contact_sectors_label">Sectors</span>
+            <span class="contact-item__val" data-i18n="contact_sectors_val">Multimodal Logistics · Container Solutions · Commodity Trading</span>
           </div>
           <div class="contact-item">
-            <span class="contact-item__label">Operating Region</span>
-            <span class="contact-item__val">Turkey · Caucasus · Central Asia</span>
+            <span class="contact-item__label" data-i18n="contact_region_label">Operating Region</span>
+            <span class="contact-item__val" data-i18n="contact_region_val">Turkey · Caucasus · Central Asia</span>
           </div>
         </div>
-
         <div class="contact-note">
-          <p>MERVIL Global works with a select group of business partners. All inquiries are treated with discretion and professionalism.</p>
+          <p data-i18n="contact_note">MERVIL Global works with a select group of business partners. All inquiries are treated with discretion and professionalism.</p>
         </div>
       </div>
 
-      <!-- CONTACT FORM -->
       <div class="contact-form-wrap">
         <form class="contact-form" id="contactForm" novalidate>
           <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required />
+            <label for="name" data-i18n="form_name_label">Full Name</label>
+            <input type="text" id="name" name="name" data-i18n-placeholder="form_name_ph" placeholder="Your name" required />
           </div>
           <div class="form-group">
-            <label for="company">Company</label>
-            <input type="text" id="company" name="company" placeholder="Your company" />
+            <label for="company" data-i18n="form_company_label">Company</label>
+            <input type="text" id="company" name="company" data-i18n-placeholder="form_company_ph" placeholder="Your company" />
           </div>
           <div class="form-group">
-            <label for="email">Email Address</label>
+            <label for="email" data-i18n="form_email_label">Email Address</label>
             <input type="email" id="email" name="email" placeholder="your@email.com" required />
           </div>
           <div class="form-group">
-            <label for="subject">Area of Interest</label>
+            <label for="subject" data-i18n="form_interest_label">Area of Interest</label>
             <select id="subject" name="subject">
-              <option value="" disabled selected>Select a service area</option>
-              <option value="containers">Container Trading &amp; Leasing</option>
-              <option value="logistics">Railway &amp; Multimodal Logistics</option>
-              <option value="commodities">Commodity Trading</option>
-              <option value="other">General Inquiry</option>
+              <option value="" disabled selected data-i18n="form_select_default">Select a service area</option>
+              <option value="logistics" data-i18n="form_opt1">Multimodal Logistics</option>
+              <option value="containers" data-i18n="form_opt2">Container Solutions</option>
+              <option value="commodities" data-i18n="form_opt3">Commodity Trading</option>
+              <option value="other" data-i18n="form_opt4">General Inquiry</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell us about your requirement..." required></textarea>
+            <label for="message" data-i18n="form_msg_label">Message</label>
+            <textarea id="message" name="message" rows="5" data-i18n-placeholder="form_msg_ph" placeholder="Tell us about your requirement..." required></textarea>
           </div>
-          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
-          <div class="form-success" id="formSuccess">
+          <button type="submit" class="btn btn--primary btn--full" data-i18n="form_submit">Send Message</button>
+          <div class="form-success" id="formSuccess" data-i18n="form_success">
             ✓ Thank you. Your message has been sent. We'll be in touch shortly.
           </div>
         </form>
       </div>
-
     </div>
   </section>
 
   <footer class="footer">
     <div class="container footer__inner">
       <a href="index.html" class="footer__logo"><img src="logo.png" alt="MERVIL Global" /></a>
-
       <div class="footer__cols">
         <div class="footer__col">
-          <span class="footer__col-title">Services</span>
-          <a href="services.html#logistics">Multimodal Logistics</a>
-          <a href="services.html#containers">Container Solutions</a>
-          <a href="services.html#commodities">Commodity Trading</a>
+          <span class="footer__col-title" data-i18n="footer_svc_title">Services</span>
+          <a href="services.html#logistics" data-i18n="footer_s1">Multimodal Logistics</a>
+          <a href="services.html#containers" data-i18n="footer_s2">Container Solutions</a>
+          <a href="services.html#commodities" data-i18n="footer_s3">Commodity Trading</a>
         </div>
         <div class="footer__col">
-          <span class="footer__col-title">Company</span>
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+          <span class="footer__col-title" data-i18n="footer_co_title">Company</span>
+          <a href="about.html" data-i18n="footer_about">About</a>
+          <a href="services.html" data-i18n="footer_services">Services</a>
+          <a href="contact.html" data-i18n="footer_contact">Contact</a>
         </div>
       </div>
-      <div class="footer__copy">© 2025 MERVIL Global. All rights reserved.</div>
+      <div class="footer__copy" data-i18n="footer_copy">© 2025 MERVIL Global. All rights reserved.</div>
     </div>
   </footer>
-
+  <script src="i18n.js"></script>
   <script src="main.js"></script>
 </body>
 </html>

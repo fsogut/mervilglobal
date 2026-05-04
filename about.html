@@ -12,119 +12,113 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
-
   <nav class="nav" id="nav">
     <div class="nav__inner">
-      <a href="index.html" class="nav__logo">
-        <img src="logo.png" alt="MERVIL Global" />
-      </a>
-      <button class="nav__burger" id="burger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="index.html" class="nav__logo"><img src="logo.png" alt="MERVIL Global" /></a>
+      <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
       <ul class="nav__links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="about.html" class="active" data-i18n="nav_about">About</a></li>
+        <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+        <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
       </ul>
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="tr">TR</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="ru">RU</button>
+      </div>
     </div>
   </nav>
 
-  <!-- PAGE HERO -->
   <section class="page-hero">
     <div class="container">
-      <h1>Experienced across trade routes.<br>Focused on practical execution.</h1>
+      <h1 data-i18n="about_hero_title">Experienced across trade routes.<br>Focused on practical execution.</h1>
     </div>
   </section>
 
-  <!-- STORY SECTION -->
   <section class="story section">
     <div class="container story__inner">
       <div class="story__text">
-        <h2>MERVIL built for complex trade and logistics operations.</h2>
-        <p>MERVIL Global operates at the intersection of logistics, commodity trading, and container solutions, supporting clients across complex international supply chains.</p>
-        <p>With deep regional expertise and a strong network of partners, we deliver reliable, efficient, and tailored solutions across key trade corridors while maintaining the flexibility to operate globally.</p>
-        <p>Our approach is built on long-term relationships, operational precision, and a clear understanding of the realities of cross-border trade.</p>
+        <h2 data-i18n="about_story_title">MERVIL built for complex trade and logistics operations.</h2>
+        <p data-i18n="about_story_p1">MERVIL Global operates at the intersection of logistics, commodity trading, and container solutions, supporting clients across complex international supply chains.</p>
+        <p data-i18n="about_story_p2">With deep regional expertise and a strong network of partners, we deliver reliable, efficient, and tailored solutions across key trade corridors while maintaining the flexibility to operate globally.</p>
+        <p data-i18n="about_story_p3">Our approach is built on long-term relationships, operational precision, and a clear understanding of the realities of cross-border trade.</p>
       </div>
       <div class="story__values">
         <div class="value-card">
-          <h4>Relationship First</h4>
-          <p>We prefer a small circle of trusted partners over aggressive growth. Every engagement is built on mutual respect and long-term commitment.</p>
+          <h4 data-i18n="val1_title">Relationship First</h4>
+          <p data-i18n="val1_desc">We prefer a small circle of trusted partners over aggressive growth. Every engagement is built on mutual respect and long-term commitment.</p>
         </div>
         <div class="value-card">
-          <h4>Premium Service</h4>
-          <p>Quality and reliability are non-negotiable. We maintain high standards across every transaction, from planning to execution.</p>
+          <h4 data-i18n="val2_title">Premium Service</h4>
+          <p data-i18n="val2_desc">Quality and reliability are non-negotiable. We maintain high standards across every transaction, from planning to execution.</p>
         </div>
         <div class="value-card">
-          <h4>Operational Focus</h4>
-          <p>We prioritize efficiency, clarity, and execution — ensuring every solution delivers measurable value to our clients.</p>
+          <h4 data-i18n="val3_title">Operational Focus</h4>
+          <p data-i18n="val3_desc">We prioritize efficiency, clarity, and execution — ensuring every solution delivers measurable value to our clients.</p>
         </div>
         <div class="value-card">
-          <h4>Deep Regional Knowledge</h4>
-          <p>More than 10 years of on-the-ground experience across Turkey, Azerbaijan, Georgia, Kazakhstan, and Uzbekistan — this is our home territory.</p>
+          <h4 data-i18n="val4_title">Deep Regional Knowledge</h4>
+          <p data-i18n="val4_desc">More than 10 years of on-the-ground experience across Turkey, Azerbaijan, Georgia, Kazakhstan, and Uzbekistan — this is our home territory.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PHILOSOPHY -->
   <section class="philosophy section--dark">
     <div class="container philosophy__inner">
-      <blockquote class="philosophy__quote">
-        "We didn't build MERVIL Global to be the biggest — only to be the most reliable partner for clients who value precision and long-term trust."
-      </blockquote>
-      <cite>— Founder &amp; CEO, MERVIL Global</cite>
+      <blockquote class="philosophy__quote" data-i18n="about_quote">"We didn't build MERVIL Global to be the biggest — only to be the most reliable partner for clients who value precision and long-term trust."</blockquote>
+      <cite data-i18n="about_cite">— Founder &amp; CEO, MERVIL Global</cite>
     </div>
   </section>
 
-  <!-- GEOGRAPHY -->
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <span class="label">Geographic Focus</span>
-        <h2>Strategic presence across Eurasian trade routes.</h2>
+        <span class="label" data-i18n="about_geo_label">Geographic Focus</span>
+        <h2 data-i18n="about_geo_title">Strategic presence across Eurasian trade routes.</h2>
       </div>
-      <p class="section-sub">Our core operations are focused on the trade corridor connecting Turkey, the Caucasus, and Central Asia — an increasingly important region for global supply chains.</p>
+      <p class="section-sub" data-i18n="about_geo_sub">Our core operations are focused on the trade corridor connecting Turkey, the Caucasus, and Central Asia — an increasingly important region for global supply chains.</p>
       <div class="geo-grid">
-        <div class="geo-item"><strong>Turkey</strong><br>Core base of operations and a key logistics hub connecting Europe and Asia.</div>
-        <div class="geo-item"><strong>Azerbaijan &amp; Georgia</strong><br>Key transit markets along the Trans-Caspian International Transport Route (Middle Corridor).</div>
-        <div class="geo-item"><strong>Kazakhstan &amp; Uzbekistan</strong><br>Growing markets with increasing demand for commodities, container flows, and multimodal logistics solutions.</div>
+        <div class="geo-item"><strong data-i18n="geo1_name">Turkey</strong><br><span data-i18n="geo1_desc">Core base of operations and a key logistics hub connecting Europe and Asia.</span></div>
+        <div class="geo-item"><strong data-i18n="geo2_name">Azerbaijan &amp; Georgia</strong><br><span data-i18n="geo2_desc">Key transit markets along the Trans-Caspian International Transport Route (Middle Corridor).</span></div>
+        <div class="geo-item"><strong data-i18n="geo3_name">Kazakhstan &amp; Uzbekistan</strong><br><span data-i18n="geo3_desc">Growing markets with increasing demand for commodities, container flows, and multimodal logistics solutions.</span></div>
       </div>
-      <p class="geo-global">While our core expertise lies in these regions, we operate globally through an established network of partners.</p>
+      <p class="geo-global" data-i18n="geo_global">While our core expertise lies in these regions, we operate globally through an established network of partners.</p>
     </div>
   </section>
 
-  <!-- CTA BANNER -->
   <section class="cta-banner">
     <div class="container">
-      <h2>Start a conversation.</h2>
-      <p>Tell us what you need — we'll explore the most efficient way to support your operations.</p>
-      <a href="contact.html" class="btn btn--white">Get in Touch</a>
+      <h2 data-i18n="about_cta_title">Start a conversation.</h2>
+      <p data-i18n="about_cta_desc">Tell us what you need — we'll explore the most efficient way to support your operations.</p>
+      <a href="contact.html" class="btn btn--white" data-i18n="about_cta_btn">Get in Touch</a>
     </div>
   </section>
 
   <footer class="footer">
     <div class="container footer__inner">
       <a href="index.html" class="footer__logo"><img src="logo.png" alt="MERVIL Global" /></a>
-
       <div class="footer__cols">
         <div class="footer__col">
-          <span class="footer__col-title">Services</span>
-          <a href="services.html#logistics">Multimodal Logistics</a>
-          <a href="services.html#containers">Container Solutions</a>
-          <a href="services.html#commodities">Commodity Trading</a>
+          <span class="footer__col-title" data-i18n="footer_svc_title">Services</span>
+          <a href="services.html#logistics" data-i18n="footer_s1">Multimodal Logistics</a>
+          <a href="services.html#containers" data-i18n="footer_s2">Container Solutions</a>
+          <a href="services.html#commodities" data-i18n="footer_s3">Commodity Trading</a>
         </div>
         <div class="footer__col">
-          <span class="footer__col-title">Company</span>
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+          <span class="footer__col-title" data-i18n="footer_co_title">Company</span>
+          <a href="about.html" data-i18n="footer_about">About</a>
+          <a href="services.html" data-i18n="footer_services">Services</a>
+          <a href="contact.html" data-i18n="footer_contact">Contact</a>
         </div>
       </div>
-      <div class="footer__copy">© 2025 MERVIL Global. All rights reserved.</div>
+      <div class="footer__copy" data-i18n="footer_copy">© 2025 MERVIL Global. All rights reserved.</div>
     </div>
   </footer>
-
+  <script src="i18n.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
