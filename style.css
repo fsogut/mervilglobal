@@ -400,6 +400,17 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
 }
 .region__sep { color: var(--blue); font-size: 1.2rem; }
 
+.regions__note {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.88rem;
+  color: #888;
+  font-style: italic;
+}
+
+.why-home { background: var(--off-white); }
+.why-home .why-grid { margin-top: 0; }
+
 /* ── CTA BANNER ── */
 .cta-banner {
   background: var(--blue);
