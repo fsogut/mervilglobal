@@ -19,16 +19,37 @@ if (burger && navLinks) {
   });
 }
 
-// Contact form — demo submit
+// Contact form — Formspree submission
 const form = document.getElementById('contactForm');
 if (form) {
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
+    const submitBtn = form.querySelector('.btn');
     const success = document.getElementById('formSuccess');
-    form.querySelectorAll('input, textarea, select').forEach(el => el.disabled = true);
-    form.querySelector('.btn').style.opacity = '0.5';
-    success.classList.add('visible');
-    success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    submitBtn.disabled = true;
+    submitBtn.style.opacity = '0.6';
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        form.reset();
+        success.classList.add('visible');
+        success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      } else {
+        submitBtn.disabled = false;
+        submitBtn.style.opacity = '1';
+        alert('Something went wrong. Please try again or email us directly at info@mervilglobal.com');
+      }
+    } catch (err) {
+      submitBtn.disabled = false;
+      submitBtn.style.opacity = '1';
+      alert('Something went wrong. Please try again or email us directly at info@mervilglobal.com');
+    }
   });
 }
 
