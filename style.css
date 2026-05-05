@@ -467,7 +467,7 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 0;
   text-align: center;
 }
 .footer__logo img {
@@ -483,19 +483,16 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.3);
-}
-  font-size: 0.72rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.35);
+  margin-top: 12px;
 }
 .footer__cols {
   display: flex;
-  gap: 64px;
-  margin: 8px 0;
+  gap: 80px;
+  margin-top: 48px;
+  padding-top: 32px;
   border-top: 1px solid rgba(255,255,255,0.08);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  padding: 24px 0;
+  width: 100%;
+  justify-content: center;
 }
 .footer__col {
   display: flex;
@@ -521,6 +518,11 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
 .footer__copy {
   font-size: 0.75rem;
   color: rgba(255,255,255,0.25);
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  width: 100%;
+  text-align: center;
 }
 
 /* ── WHY US ── */
