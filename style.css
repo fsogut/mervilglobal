@@ -734,6 +734,11 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
   transition: color var(--transition);
 }
 a.contact-item__val:hover { color: var(--blue); }
+.contact-item__val--locations {
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--charcoal);
+}
 .contact-note {
   padding: 20px 24px;
   background: var(--off-white);
