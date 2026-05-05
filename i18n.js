@@ -4,7 +4,7 @@ const translations = {
   en: {
     nav_home: "Home", nav_about: "About", nav_services: "Services", nav_contact: "Contact",
     hero_line1: "Built on trust.", hero_line2: "Driven by execution.",
-    hero_sub: "Commodity trading&nbsp;•&nbsp;Multimodal logistics&nbsp;•&nbsp;Container solutions",
+    hero_sub: "Multimodal logistics&nbsp;•&nbsp;Container solutions&nbsp;•&nbsp;Commodity trading",
     hero_btn1: "Our Services", hero_btn2: "Get in Touch",
     svc_headline: "Integrated logistics and trading solutions across key global corridors.",
     s1_title: "Multimodal Logistics",
@@ -43,7 +43,7 @@ const translations = {
   tr: {
     nav_home: "Ana Sayfa", nav_about: "Hakkımızda", nav_services: "Hizmetler", nav_contact: "İletişim",
     hero_line1: "Güven üzerine kurulu.", hero_line2: "Uygulama odaklı.",
-    hero_sub: "Emtia ticareti&nbsp;•&nbsp;Multimodal lojistik&nbsp;•&nbsp;Konteyner çözümleri",
+    hero_sub: "Multimodal lojistik&nbsp;•&nbsp;Konteyner çözümleri&nbsp;•&nbsp;Emtia ticareti",
     hero_btn1: "Hizmetlerimiz", hero_btn2: "İletişime Geçin",
     svc_headline: "Küresel ticaret koridorlarında entegre lojistik ve ticaret çözümleri.",
     s1_title: "Multimodal Lojistik",
@@ -82,7 +82,7 @@ const translations = {
   ru: {
     nav_home: "Главная", nav_about: "О нас", nav_services: "Услуги", nav_contact: "Контакт",
     hero_line1: "Построено на доверии.", hero_line2: "Движимо исполнением.",
-    hero_sub: "Торговля сырьём&nbsp;•&nbsp;Мультимодальная логистика&nbsp;•&nbsp;Контейнерные решения",
+    hero_sub: "Мультимодальная логистика&nbsp;•&nbsp;Контейнерные решения&nbsp;•&nbsp;Торговля сырьём",
     hero_btn1: "Наши услуги", hero_btn2: "Связаться",
     svc_headline: "Интегрированные логистические и торговые решения на ключевых мировых коридорах.",
     s1_title: "Мультимодальная логистика",
