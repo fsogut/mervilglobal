@@ -11,8 +11,8 @@
   --off-white: #F7F5F2;
   --mid-grey: #888;
   --border: #e0ddd9;
-  --font-display: 'Cormorant Garamond', serif;
-  --font-body: 'DM Sans', sans-serif;
+  --font-display: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
   --max-w: 1160px;
   --nav-h: 72px;
   --transition: 0.25s ease;
@@ -43,15 +43,16 @@ a { text-decoration: none; color: inherit; }
 /* ── TYPOGRAPHY ── */
 h1, h2, h3, h4 {
   font-family: var(--font-display);
-  font-weight: 400;
-  line-height: 1.2;
+  font-weight: 600;
+  line-height: 1.15;
   color: var(--charcoal);
+  letter-spacing: -0.02em;
 }
-h1 { font-size: clamp(2.6rem, 5vw, 4.2rem); }
-h2 { font-size: clamp(2rem, 3.5vw, 3rem); }
-h3 { font-size: 1.5rem; }
-h4 { font-size: 1.2rem; }
-em { font-style: normal; color: #3A6EA5; }
+h1 { font-size: clamp(2.2rem, 4.5vw, 3.6rem); }
+h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); }
+h3 { font-size: 1.2rem; }
+h4 { font-size: 1rem; }
+em { font-style: normal; color: #3A6EA5; font-weight: 300; }
 
 p { font-size: 1rem; color: #444; line-height: 1.8; }
 
@@ -260,10 +261,11 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
   margin-bottom: 24px;
 }
 .hero__title {
-  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-size: clamp(2.4rem, 5.5vw, 4.8rem);
   color: #fff;
-  font-weight: 300;
+  font-weight: 700;
   line-height: 1.1;
+  letter-spacing: -0.03em;
   margin-bottom: 28px;
 }
 .hero__sub {
@@ -303,13 +305,14 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
   margin-bottom: 48px;
 }
 .pillars__headline {
-  font-family: var(--font-display);
-  font-size: clamp(1.15rem, 2vw, 1.5rem);
-  color: #555;
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  color: #666;
   font-weight: 400;
   max-width: 680px;
   margin: 0 auto;
-  line-height: 1.5;
+  line-height: 1.6;
+  letter-spacing: 0;
 }
 
 /* ── MOTHER'S DAY ── */
@@ -396,11 +399,12 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
 .stat__num {
   display: block;
   font-family: var(--font-display);
-  font-size: 2.8rem;
-  font-weight: 400;
+  font-size: 2.4rem;
+  font-weight: 700;
   color: var(--charcoal);
   line-height: 1;
   margin-bottom: 6px;
+  letter-spacing: -0.03em;
 }
 .stat__label {
   font-size: 0.82rem;
@@ -419,9 +423,9 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
   margin-top: 40px;
 }
 .region {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 500;
   padding: 0 24px;
 }
 .region__sep { color: var(--blue); font-size: 1.2rem; }
@@ -517,11 +521,11 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
 .why-intro { background: #fff; }
 .why-intro__inner { max-width: 760px; }
 .why-intro__text {
-  font-family: var(--font-display);
-  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
   color: #444;
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 .why-blocks { background: var(--off-white); padding: 0; }
 .why-grid {
@@ -550,12 +554,13 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
 .why-card:hover { box-shadow: 0 8px 40px rgba(0,0,0,0.07); z-index: 1; }
 .why-card__num {
   font-family: var(--font-display);
-  font-size: 2.8rem;
-  font-weight: 300;
+  font-size: 2rem;
+  font-weight: 700;
   color: var(--border);
   line-height: 1;
   min-width: 48px;
   padding-top: 4px;
+  letter-spacing: -0.02em;
 }
 .why-card__body h3 {
   font-size: 1.3rem;
@@ -585,7 +590,7 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
   background: var(--charcoal);
 }
 .page-hero .label { color: var(--blue-light); }
-.page-hero h1 { color: #fff; font-weight: 300; }
+.page-hero h1 { color: #fff; font-weight: 700; letter-spacing: -0.03em; }
 
 /* ── STORY ── */
 .story__inner {
@@ -609,10 +614,10 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
 .value-card h4 {
   margin-bottom: 10px;
   font-family: var(--font-display);
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--charcoal);
-  letter-spacing: 0.01em;
+  letter-spacing: -0.01em;
 }
 .value-card p { font-size: 0.88rem; color: #666; }
 
@@ -620,11 +625,11 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
 .philosophy__inner { max-width: 800px; margin: 0 auto; text-align: center; }
 .philosophy__quote {
   font-family: var(--font-display);
-  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
   font-weight: 300;
   font-style: italic;
   color: #fff;
-  line-height: 1.6;
+  line-height: 1.7;
   margin-bottom: 24px;
 }
 .philosophy__inner cite {
@@ -668,10 +673,11 @@ p { font-size: 1rem; color: #444; line-height: 1.8; }
 }
 .svc-num {
   font-family: var(--font-display);
-  font-size: 3.5rem;
-  font-weight: 300;
+  font-size: 2.5rem;
+  font-weight: 700;
   color: var(--border);
   line-height: 1;
+  letter-spacing: -0.03em;
 }
 .svc-divider {
   width: 1px;
