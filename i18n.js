@@ -25,7 +25,7 @@ const translations = {
     w4_title: "Tailored<br>Solutions",
     w4_desc: "Every engagement is structured individually, aligning logistics, trading, and container strategies with your specific needs.",
     about_label: "About MERVIL Global",
-    about_title: "MERVIL built for complex trade and logistics operations.",
+    about_title: "MERVIL is built for complex trade and logistics operations.",
     about_desc: "MERVIL Global operates at the intersection of logistics, commodity trading, and container solutions, supporting clients across complex international supply chains. With deep regional expertise and a strong network of partners, we deliver reliable, efficient, and tailored solutions across key trade corridors while maintaining the flexibility to operate globally.",
     about_btn: "Learn More",
     stat1_label: "Years of Regional Experience", stat2_label: "Core Business Sectors", stat3_label: "Focused — Premium & Selective",
@@ -64,7 +64,7 @@ const translations = {
     w4_title: "Özelleştirilmiş<br>Çözümler",
     w4_desc: "Her iş birliği bireysel olarak yapılandırılır; lojistik, ticaret ve konteyner stratejileri özel ihtiyaçlarınıza göre şekillendirilir.",
     about_label: "MERVIL Global Hakkında",
-    about_title: "MERVIL, karmaşık ticaret ve lojistik operasyonları için kuruldu.",
+    about_title: "MERVIL, karmaşık ticaret ve lojistik operasyonları için kurulmuştur.",
     about_desc: "MERVIL Global; lojistik, emtia ticareti ve konteyner çözümlerinin kesişim noktasında faaliyet göstererek müşterilerini karmaşık uluslararası tedarik zincirlerinde desteklemektedir. Derin bölgesel uzmanlık ve güçlü bir ortak ağıyla; kilit ticaret koridorlarında güvenilir, verimli ve özelleştirilmiş çözümler sunarken küresel ölçekte faaliyet esnekliğini koruyoruz.",
     about_btn: "Daha Fazla",
     stat1_label: "Yıllık Bölgesel Deneyim", stat2_label: "Temel İş Sektörü", stat3_label: "Odaklı — Seçici & Kaliteli",
@@ -160,7 +160,7 @@ const extraTranslations = {
   en: {
     // About
     about_hero_title: "Experienced across trade routes.<br>Focused on practical execution.",
-    about_story_title: "MERVIL built for complex trade and logistics operations.",
+    about_story_title: "MERVIL is built for complex trade and logistics operations.",
     about_story_p1: "MERVIL Global operates at the intersection of logistics, commodity trading, and container solutions, supporting clients across complex international supply chains.",
     about_story_p2: "With deep regional expertise and a strong network of partners, we deliver reliable, efficient, and tailored solutions across key trade corridors while maintaining the flexibility to operate globally.",
     about_story_p3: "Our approach is built on long-term relationships, operational precision, and a clear understanding of the realities of cross-border trade.",
@@ -207,7 +207,7 @@ const extraTranslations = {
   },
   tr: {
     about_hero_title: "Ticaret güzergahlarında deneyimli.<br>Pratik uygulamaya odaklı.",
-    about_story_title: "MERVIL, karmaşık ticaret ve lojistik operasyonları için kuruldu.",
+    about_story_title: "MERVIL, karmaşık ticaret ve lojistik operasyonları için kurulmuştur.",
     about_story_p1: "MERVIL Global; lojistik, emtia ticareti ve konteyner çözümlerinin kesişim noktasında faaliyet göstererek müşterilerini karmaşık uluslararası tedarik zincirlerinde desteklemektedir.",
     about_story_p2: "Derin bölgesel uzmanlık ve güçlü bir ortak ağıyla; kilit ticaret koridorlarında güvenilir, verimli ve özelleştirilmiş çözümler sunarken küresel ölçekte faaliyet esnekliğini koruyoruz.",
     about_story_p3: "Yaklaşımımız; uzun vadeli ilişkiler, operasyonel hassasiyet ve sınır ötesi ticaretin gerçekliklerine dair net bir anlayış üzerine kuruludur.",
