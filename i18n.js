@@ -42,7 +42,7 @@ const translations = {
   },
   tr: {
     nav_home: "Ana Sayfa", nav_about: "Hakkımızda", nav_services: "Hizmetler", nav_contact: "İletişim",
-    hero_line1: "Güven üzerine kurulu.", hero_line2: "Uygulama odaklı.",
+    hero_line1: "Güvene dayalı.", hero_line2: "Sonuca odaklı.",
     hero_sub: "Multimodal lojistik&nbsp;•&nbsp;Konteyner çözümleri&nbsp;•&nbsp;Emtia ticareti",
     hero_btn1: "Hizmetlerimiz", hero_btn2: "İletişime Geçin",
     svc_headline: "Küresel ticaret koridorlarında entegre lojistik ve ticaret çözümleri.",
