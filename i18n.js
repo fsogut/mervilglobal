@@ -38,7 +38,7 @@ const translations = {
     footer_svc_title: "Services", footer_co_title: "Company",
     footer_s1: "Multimodal Logistics", footer_s2: "Container Solutions", footer_s3: "Commodity Trading",
     footer_about: "About", footer_services: "Services", footer_contact: "Contact",
-    footer_copy: "© 2025 MERVIL Global. All rights reserved.",
+    footer_copy: "© 2026 MERVIL Global. All rights reserved.",
   },
   tr: {
     nav_home: "Ana Sayfa", nav_about: "Hakkımızda", nav_services: "Hizmetler", nav_contact: "İletişim",
@@ -77,7 +77,7 @@ const translations = {
     footer_svc_title: "Hizmetler", footer_co_title: "Şirket",
     footer_s1: "Multimodal Lojistik", footer_s2: "Konteyner Çözümleri", footer_s3: "Emtia Ticareti",
     footer_about: "Hakkımızda", footer_services: "Hizmetler", footer_contact: "İletişim",
-    footer_copy: "© 2025 MERVIL Global. Tüm hakları saklıdır.",
+    footer_copy: "© 2026 MERVIL Global. Tüm hakları saklıdır.",
   },
   ru: {
     nav_home: "Главная", nav_about: "О нас", nav_services: "Услуги", nav_contact: "Контакт",
@@ -116,7 +116,7 @@ const translations = {
     footer_svc_title: "Услуги", footer_co_title: "Компания",
     footer_s1: "Мультимодальная логистика", footer_s2: "Контейнерные решения", footer_s3: "Торговля сырьём",
     footer_about: "О нас", footer_services: "Услуги", footer_contact: "Контакт",
-    footer_copy: "© 2025 MERVIL Global. Все права защищены.",
+    footer_copy: "© 2026 MERVIL Global. Все права защищены.",
   }
 };
 
