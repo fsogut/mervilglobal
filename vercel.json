@@ -1,4 +1,28 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{"type": "host", "value": "mervilglobal.com"}],
+      "destination": "https://www.mervilglobal.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [{"type": "host", "value": "mervilglobal.vercel.app"}],
+      "destination": "https://www.mervilglobal.com/$1",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {"key": "X-Content-Type-Options", "value": "nosniff"},
+        {"key": "X-Frame-Options", "value": "SAMEORIGIN"},
+        {"key": "X-XSS-Protection", "value": "1; mode=block"}
+      ]
+    }
+  ]
 }
