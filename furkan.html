@@ -1,0 +1,117 @@
+<!doctype html>
+<!-- MERVIL Global: Furkan Ogut contact page (QR landing page). Lives at https://www.mervilglobal.com/furkan -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Furkan Ogut · MERVIL Global</title>
+<meta name="description" content="Managing Director, MERVIL Global. Logistics, containers and commodities.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#2a2a2a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#2a2a2a;
+    --ink:#ffffff;
+    --muted:#b9bcc2;
+    --blue:#3A6EA5;
+    --blue-hover:#2F5E9E;
+    --line:rgba(255,255,255,.28);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    min-height:100vh;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+    -webkit-font-smoothing:antialiased;
+    display:flex;justify-content:center;
+  }
+  main{
+    width:100%;max-width:440px;
+    padding:56px 24px 40px;
+    display:flex;flex-direction:column;
+    min-height:100vh;
+  }
+
+  /* Logo */
+  .logo{display:inline-block;line-height:0}
+  .logo img{width:170px;height:auto}
+
+  /* Person */
+  .person{margin-top:64px}
+  h1{margin:0;font-size:32px;font-weight:600;letter-spacing:-.3px}
+  .role{margin:6px 0 0;font-size:16px;color:var(--muted)}
+  .slogan{margin:36px 0 0;font-size:22px;line-height:1.3;letter-spacing:-.2px}
+  .slogan .a{font-weight:600;display:block}
+  .slogan .b{font-weight:300;color:#5a90c8;display:block}
+
+  /* Actions */
+  .actions{margin-top:44px;display:flex;flex-direction:column;gap:14px}
+  .btn{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    min-height:58px;padding:0 22px;
+    font:500 14px/1 Inter,system-ui,sans-serif;letter-spacing:1.6px;text-transform:uppercase;
+    text-decoration:none;color:var(--ink);
+    border:1px solid var(--line);
+    transition:background .15s,border-color .15s;
+  }
+  .btn svg{width:20px;height:20px;flex:none;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+  .btn:hover{border-color:rgba(255,255,255,.6);background:rgba(255,255,255,.04)}
+  .btn.primary{background:var(--blue);border-color:var(--blue)}
+  .btn.primary:hover{background:var(--blue-hover);border-color:var(--blue-hover)}
+  .btn:focus-visible{outline:2px solid #8fa9d1;outline-offset:3px}
+
+  /* Direct contact */
+  .direct{margin-top:36px;display:flex;flex-direction:column;gap:10px;font-size:15px}
+  .direct a{color:var(--muted);text-decoration:none}
+  .direct a:hover{color:var(--ink)}
+
+  footer{
+    margin-top:auto;padding-top:48px;
+    font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:#8e9197;
+    display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  }
+</style>
+</head>
+<body>
+<main>
+  <a class="logo" href="/"><img src="/logo.png" alt="MERVIL Global" width="170" height="62"></a>
+
+  <section class="person">
+    <h1>Furkan Ogut</h1>
+    <p class="role">Managing Director</p>
+    <p class="slogan"><span class="a">Built on trust.</span><span class="b">Driven by execution.</span></p>
+  </section>
+
+  <nav class="actions" aria-label="Contact options">
+    <a class="btn primary" href="/furkan-ogut.vcf" download="Furkan Ogut - MERVIL Global.vcf">
+      Save contact
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"/><path d="M19 8v6M16 11h6"/></svg>
+    </a>
+    <a class="btn" href="https://www.mervilglobal.com" target="_blank" rel="noopener">
+      Company website
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+    </a>
+    <a class="btn" href="https://www.linkedin.com/in/furkansalihogut" target="_blank" rel="noopener">
+      LinkedIn
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+    </a>
+  </nav>
+
+  <div class="direct">
+    <a href="tel:+37062598273">+370 625 98273</a>
+    <a href="tel:+905399674039">+90 539 967 40 39</a>
+    <a href="mailto:furkan@mervilglobal.com">furkan@mervilglobal.com</a>
+  </div>
+
+  <footer>
+    <span>Logistics · Containers · Commodities</span>
+    <span>Vilnius | Istanbul</span>
+  </footer>
+</main>
+</body>
+</html>

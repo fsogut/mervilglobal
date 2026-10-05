@@ -4,13 +4,23 @@
   "redirects": [
     {
       "source": "/(.*)",
-      "has": [{"type": "host", "value": "mervilglobal.com"}],
+      "has": [
+        {
+          "type": "host",
+          "value": "mervilglobal.com"
+        }
+      ],
       "destination": "https://www.mervilglobal.com/$1",
       "permanent": true
     },
     {
       "source": "/(.*)",
-      "has": [{"type": "host", "value": "mervilglobal.vercel.app"}],
+      "has": [
+        {
+          "type": "host",
+          "value": "mervilglobal.vercel.app"
+        }
+      ],
       "destination": "https://www.mervilglobal.com/$1",
       "permanent": true
     }
@@ -19,9 +29,27 @@
     {
       "source": "/(.*)",
       "headers": [
-        {"key": "X-Content-Type-Options", "value": "nosniff"},
-        {"key": "X-Frame-Options", "value": "SAMEORIGIN"},
-        {"key": "X-XSS-Protection", "value": "1; mode=block"}
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.vcf",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/vcard; charset=utf-8"
+        }
       ]
     }
   ]
